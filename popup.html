@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Coin</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline'" /> -->
+        <link rel="stylesheet" href="popup.css" />
+        <script src="node_modules\node-json2html\lib\json2html.js"></script>
+        <script type="text/javascript" src="popup.js"></script>
+        <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    </head>
+    <body>
+        <button id="button" class="checkPage">Обновить</button>
+        
+        <div id="preload" class="lds-circle">
+            <div></div>
+        </div>
+
+        <div id="off"></div>
+
+
+        <div class="container">
+                    <table class="table table-condensed  table-bordered">
+                        <p>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Market&nbsp;Cap</th>
+                                <th>Price</th>
+                                <th>Volume(24h)</th>
+                                <th>Circulating&nbsp;Supply</th>
+                                <th>Change(24h)</th>
+                            </tr>
+                            <!-- <tr>
+                                <td id = "root">
+                                    <img src="https://s2.coinmarketcap.com/static/img/coins/32x32/1.png" height="16" width="16">
+                                </td>
+                            </tr> -->
+                        </thead>
+                        <tbody id="placar" ></tbody>
+                    </table>
+            </div>
+    </body>
+</html>
